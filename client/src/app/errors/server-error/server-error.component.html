@@ -1,0 +1,13 @@
+<h4 class="text-3xl">Internal server error</h4>
+@if(error) {
+    <h5 class="text-2xl text-danger">Error: {{error.message}}</h5>
+    <p class="font-bold">Note: if you are seeing this error then its an internal server error</p>
+    <p>What to do next?</p>
+    <ol>
+        <li>Open dev tools and check the network request</li>
+        <li>Examine the URL of the failing request</li>
+        <li>Reproduce the error</li>
+    </ol>
+    <p class="font-bold">Following is the stack trace - check the first 2 lines, this tells you exactly where the problem is</p>
+    <code class="mt-5 bg-slate-300">{{error.details}}</code>
+}
